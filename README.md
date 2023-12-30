@@ -41,24 +41,28 @@ Program to design a half adder and full adder circuit and verify its truth table
 Developed by: Shaik Samreen
 RegisterNumber:  23013412
 ### half adder
-module half_adder(A,B,C,S);
-input A,B;
-output S,C;
-assign c=A&B;
-assign S=A^B;
-endmodule
+```
+   module half_adder(A,B,C,S);
+   input A,B;
+   output S,C;
+   assign c=A&B;
+   assign S=A^B;
+   endmodule
+```
 ### full adder
-module FullAdder(a,b,carryin,sum,carryout);
-input a,b,carryin;
-output sum,carryout;
-wire x,p,q,r;
-xor(x,b,carryin);
-xor(sum,x,a);
-and(p,a,b);
-and(q,b,carryin);
-and(r,a,carryin);
-or(carryout,p,q,r);
-endmodule
+```
+   module FullAdder(a,b,carryin,sum,carryout);
+   input a,b,carryin;
+   output sum,carryout;
+   wire x,p,q,r;
+   xor(x,b,carryin);
+   xor(sum,x,a);
+   and(p,a,b);
+   and(q,b,carryin);
+   and(r,a,carryin);
+   or(carryout,p,q,r);
+   endmodule
+```
 */
 
 ### Output:
